@@ -7,7 +7,7 @@ void cmd::ls(const char *dir_path)
     else cwd = opendir(dir_path);
 
     if (cwd == nullptr) {
-        std::cout << "ERROR: Could not open directory \n";
+        std::cerr << "ERROR: Could not open directory \n";
         return;
     }
 

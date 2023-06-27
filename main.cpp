@@ -20,7 +20,7 @@ int main()
         } else if (!strcmp("ls", buffer)) {
             cmd::ls(nullptr);
         } else {
-            std::cout << "ERROR: Command not found: " << buffer << "\n";
+            std::cerr << "ERROR: Command not found: " << buffer << "\n";
         }
     }
     

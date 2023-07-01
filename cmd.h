@@ -1,16 +1,18 @@
 #ifndef CMD_H
 #define CMD_H
 
-#if 1
+// Includes
 #include <iostream>
+#include <vector>
+#include <bits/stdc++.h>
+#include <string.h>
 #include <sys/types.h>
 #include <dirent.h>
-#endif //COMMON_HEADERS
 
 
 namespace cmd {
 
-void ls(const char *dir_path);
+void ls(const char *args);
 
 } // namespace cmd
 

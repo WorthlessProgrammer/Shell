@@ -2,9 +2,8 @@
 
 set -xe
 
-FILES="main.cpp cmd.cpp"
+FILES="main.cpp cmd.cpp string_utils.cpp"
 FLAGS="-std=c++17 -Wall -Wextra"
 
-g++ -c $FILES $FLAGS
-g++ -o main *.o $FLAGS
-
+clang++ -c $FILES $FLAGS
+clang++ -o main *.o $FLAGS
